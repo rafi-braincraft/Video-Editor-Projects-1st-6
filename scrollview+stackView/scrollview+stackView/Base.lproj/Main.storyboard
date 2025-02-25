@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="scrollview_stackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipW-Il-BRW">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uL2-Mt-86Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="30"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4zG-pA-QH7">
+                                                <rect key="frame" x="0.0" y="0.0" width="599" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeB-gC-O0U">
+                                                        <rect key="frame" x="0.0" y="0.0" width="58" height="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Summer">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="horizontalScrollItemClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ac-3A-gEl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VX1-RP-4Eo">
+                                                        <rect key="frame" x="68" y="0.0" width="38" height="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Rainy">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="horizontalScrollItemClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Brt-7n-Z1H"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5U-me-1Nz">
+                                                        <rect key="frame" x="116" y="0.0" width="45" height="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Spring">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="horizontalScrollItemClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="abb-Zn-gvk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwI-hu-iOP">
+                                                        <rect key="frame" x="171" y="0.0" width="54" height="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Autumn">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="horizontalScrollItemClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9xH-ov-v9y"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMn-HC-LEw">
+                                                        <rect key="frame" x="235" y="0.0" width="46" height="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Winter">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="horizontalScrollItemClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="30Z-hD-jUg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmY-hk-U6m">
+                                                        <rect key="frame" x="291" y="0.0" width="64" height="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Monsoon">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="horizontalScrollItemClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O46-rw-e8d"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajH-cZ-fyQ">
+                                                        <rect key="frame" x="365" y="0.0" width="30" height="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="gg">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="horizontalScrollItemClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXO-6e-eOm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct6-mk-rfh">
+                                                        <rect key="frame" x="405" y="0.0" width="58" height="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Summer">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="horizontalScrollItemClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v4t-cv-rYw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIX-lX-6ch">
+                                                        <rect key="frame" x="473" y="0.0" width="58" height="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Summer">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="horizontalScrollItemClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iWa-ac-IGz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbx-kl-EfH">
+                                                        <rect key="frame" x="541" y="0.0" width="58" height="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Summer">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="horizontalScrollItemClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B3H-wL-d1H"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4zG-pA-QH7" firstAttribute="leading" secondItem="uL2-Mt-86Y" secondAttribute="leading" id="Gcr-7U-ijx"/>
+                                            <constraint firstItem="4zG-pA-QH7" firstAttribute="height" secondItem="uL2-Mt-86Y" secondAttribute="height" id="Io4-Kb-IDP"/>
+                                            <constraint firstAttribute="trailing" secondItem="4zG-pA-QH7" secondAttribute="trailing" id="Ra9-Dn-z2b"/>
+                                            <constraint firstAttribute="bottom" secondItem="4zG-pA-QH7" secondAttribute="bottom" id="g5S-Wm-in4"/>
+                                            <constraint firstItem="4zG-pA-QH7" firstAttribute="top" secondItem="uL2-Mt-86Y" secondAttribute="top" id="yNU-7y-d31"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="ral-Tt-QSg"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="eZM-n4-3Od"/>
+                                    </scrollView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHU-Mb-xAS">
+                                        <rect key="frame" x="10" y="30" width="38" height="3"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3" id="lQx-V6-GU8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="nHU-Mb-xAS" firstAttribute="trailing" secondItem="JeB-gC-O0U" secondAttribute="trailing" constant="-10" id="7hy-33-8e1"/>
+                                    <constraint firstItem="nHU-Mb-xAS" firstAttribute="top" secondItem="uL2-Mt-86Y" secondAttribute="bottom" id="Bn3-MT-BPf"/>
+                                    <constraint firstItem="uL2-Mt-86Y" firstAttribute="leading" secondItem="ipW-Il-BRW" secondAttribute="leading" id="Vtl-pC-YFk"/>
+                                    <constraint firstItem="uL2-Mt-86Y" firstAttribute="top" secondItem="ipW-Il-BRW" secondAttribute="top" id="YnR-ed-NxR"/>
+                                    <constraint firstItem="nHU-Mb-xAS" firstAttribute="leading" secondItem="JeB-gC-O0U" secondAttribute="leading" constant="10" id="o5z-Oz-h3c"/>
+                                    <constraint firstAttribute="trailing" secondItem="uL2-Mt-86Y" secondAttribute="trailing" id="uV1-22-6Y0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ipW-Il-BRW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Frh-Rl-yDa"/>
+                            <constraint firstItem="ipW-Il-BRW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Hcr-2a-Q7o"/>
+                            <constraint firstItem="ipW-Il-BRW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TVg-G7-S0B"/>
+                            <constraint firstItem="ipW-Il-BRW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XOn-8l-MxH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barLeadingConstraints" destination="o5z-Oz-h3c" id="xu8-lG-i7H"/>
+                        <outlet property="barTrailingConstraint" destination="7hy-33-8e1" id="n3p-Jg-vJc"/>
+                        <outlet property="sliderStackView" destination="4zG-pA-QH7" id="mRm-Ep-KBv"/>
+                        <outlet property="sliderView" destination="nHU-Mb-xAS" id="6gz-BJ-N5o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-173.2824427480916" y="26.760563380281692"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

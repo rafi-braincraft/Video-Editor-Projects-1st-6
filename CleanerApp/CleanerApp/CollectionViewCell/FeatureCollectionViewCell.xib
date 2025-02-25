@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FeatureCollectionViewCell" reuseIdentifier="FeatureCollectionViewCell" id="gTV-IL-0wX" customClass="FeatureCollectionViewCell" customModule="CleanerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="183" height="156"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="183" height="156"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqz-5F-l9i">
+                        <rect key="frame" x="0.0" y="0.0" width="183" height="156"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cell Background" translatesAutoresizingMaskIntoConstraints="NO" id="TM5-Oh-Lg0">
+                                <rect key="frame" x="0.0" y="0.0" width="183" height="156"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo CleanUp Item" translatesAutoresizingMaskIntoConstraints="NO" id="MwR-Td-sfe">
+                                <rect key="frame" x="59.666666666666657" y="23" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MwR-Td-sfe" secondAttribute="height" multiplier="1:1" id="SGK-qy-UPg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Cleanup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="WJj-CO-7cA">
+                                <rect key="frame" x="44.333333333333336" y="102" width="94.666666666666657" height="15.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 GB to Cleanup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="Yex-Vt-QP6">
+                                <rect key="frame" x="52.333333333333336" y="120.66666666666667" width="78.666666666666657" height="12.000000000000014"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.59607843137254901" green="0.6588235294117647" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WJj-CO-7cA" firstAttribute="centerX" secondItem="aqz-5F-l9i" secondAttribute="centerX" id="98l-jY-j4P"/>
+                            <constraint firstItem="Yex-Vt-QP6" firstAttribute="top" secondItem="WJj-CO-7cA" secondAttribute="bottom" multiplier="120:117" id="9ig-wT-RzB"/>
+                            <constraint firstItem="WJj-CO-7cA" firstAttribute="top" secondItem="MwR-Td-sfe" secondAttribute="bottom" multiplier="102:87" id="GAi-yX-zMC"/>
+                            <constraint firstItem="TM5-Oh-Lg0" firstAttribute="top" secondItem="aqz-5F-l9i" secondAttribute="top" id="POC-4n-VzE"/>
+                            <constraint firstItem="MwR-Td-sfe" firstAttribute="centerX" secondItem="aqz-5F-l9i" secondAttribute="centerX" id="UoJ-ec-q8Z"/>
+                            <constraint firstAttribute="trailing" secondItem="TM5-Oh-Lg0" secondAttribute="trailing" id="XzN-JP-5Hu"/>
+                            <constraint firstAttribute="bottom" secondItem="TM5-Oh-Lg0" secondAttribute="bottom" id="c9n-rU-doe"/>
+                            <constraint firstItem="MwR-Td-sfe" firstAttribute="height" secondItem="aqz-5F-l9i" secondAttribute="height" multiplier="0.410256" id="kOF-HA-dkC"/>
+                            <constraint firstItem="Yex-Vt-QP6" firstAttribute="centerX" secondItem="aqz-5F-l9i" secondAttribute="centerX" id="ocj-yJ-zTJ"/>
+                            <constraint firstItem="TM5-Oh-Lg0" firstAttribute="leading" secondItem="aqz-5F-l9i" secondAttribute="leading" id="r2M-VZ-zhb"/>
+                            <constraint firstItem="MwR-Td-sfe" firstAttribute="top" secondItem="aqz-5F-l9i" secondAttribute="bottom" multiplier="23:156" id="xbJ-hf-Ucs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="aqz-5F-l9i" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="J59-zv-avQ"/>
+                <constraint firstAttribute="bottom" secondItem="aqz-5F-l9i" secondAttribute="bottom" id="JXl-tW-esx"/>
+                <constraint firstItem="aqz-5F-l9i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qcc-Pe-5sS"/>
+                <constraint firstAttribute="trailing" secondItem="aqz-5F-l9i" secondAttribute="trailing" id="kkc-mS-eHS"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroundImage" destination="TM5-Oh-Lg0" id="Kzx-E1-csi"/>
+            </connections>
+            <point key="canvasLocation" x="-21.374045801526716" y="-1.4084507042253522"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Cell Background" width="183" height="156"/>
+        <image name="Photo CleanUp Item" width="64.333335876464844" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

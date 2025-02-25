@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0ca-rX-3WA">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QR_Scanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abx-7u-C1c">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="9J6-3j-b9x">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="312"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dqY-7C-38u">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="150"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="965-LB-41t">
+                                                        <rect key="frame" x="0.0" y="0.0" width="185" height="150"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Create qr Codes"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFU-c9-gMI">
+                                                        <rect key="frame" x="197" y="0.0" width="185" height="150"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Create qr Codes"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dfl-n7-ZbJ">
+                                                <rect key="frame" x="0.0" y="162" width="382" height="150"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJR-8B-xIx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="185" height="150"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Create qr Codes"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKP-vA-ULm">
+                                                        <rect key="frame" x="197" y="0.0" width="185" height="150"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Create qr Codes"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m1I-Mp-kdP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641.25" y="829.22535211267609"/>
+        </scene>
+        <!--QR Code Scanner-->
+        <scene sceneID="70a-k5-382">
+            <objects>
+                <viewController id="kaI-Nm-qa9" customClass="GeneratorViewController" customModule="QR_Scanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="seG-xL-jEp" customClass="GeneratorViewCon">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hua-qX-8TT">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="MO8-3b-Dkb">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="312"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xJ0-Pf-Lzn">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="150"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFd-2n-gMm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="185" height="150"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="hFd-2n-gMm" secondAttribute="height" multiplier="37:30" id="bXD-Ig-8xg"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Create qr Codes"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKN-Ek-GWX">
+                                                        <rect key="frame" x="197" y="0.0" width="185" height="150"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="LKN-Ek-GWX" secondAttribute="height" multiplier="37:30" id="7yd-dK-fYT"/>
+                                                            <constraint firstAttribute="width" secondItem="LKN-Ek-GWX" secondAttribute="height" multiplier="37:30" id="znc-ef-f3J"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Decorate qr codes"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="LKN-Ek-GWX" firstAttribute="width" secondItem="hFd-2n-gMm" secondAttribute="width" id="kjg-0Y-esT"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3Ob-qW-UBf">
+                                                <rect key="frame" x="0.0" y="162" width="382" height="150"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKI-L8-0aB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="185" height="150"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="cKI-L8-0aB" secondAttribute="height" multiplier="37:30" id="rGN-tb-HVQ"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Scan qr codes"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdJ-XI-z6x">
+                                                        <rect key="frame" x="197" y="0.0" width="185" height="150"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="RdJ-XI-z6x" secondAttribute="height" multiplier="37:30" id="Don-cI-aUm"/>
+                                                            <constraint firstAttribute="width" secondItem="RdJ-XI-z6x" secondAttribute="height" multiplier="37:30" id="Kmw-yA-ip0"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Create Bar Codes"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cKI-L8-0aB" firstAttribute="width" secondItem="hFd-2n-gMm" secondAttribute="width" id="mlf-u3-9Sg"/>
+                                            <constraint firstItem="RdJ-XI-z6x" firstAttribute="width" secondItem="hFd-2n-gMm" secondAttribute="width" id="szY-tE-SRk"/>
+                                        </constraints>
+                                    </stackView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cmi-Ho-fce">
+                                        <rect key="frame" x="0.0" y="332" width="414" height="393"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ddW-oW-jlQ">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GeneratorCollectionViewCell" id="8nt-xB-AKZ" customClass="GeneratorCollectionViewCell" customModule="QR_Scanner" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XoC-a6-TG0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Cmi-Ho-fce" firstAttribute="top" secondItem="MO8-3b-Dkb" secondAttribute="bottom" constant="20" id="47S-7F-ehI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cmi-Ho-fce" secondAttribute="bottom" id="4OD-eu-sjo"/>
+                                    <constraint firstItem="hFd-2n-gMm" firstAttribute="width" secondItem="hua-qX-8TT" secondAttribute="width" multiplier="0.44686" id="9hG-zo-yMG"/>
+                                    <constraint firstItem="MO8-3b-Dkb" firstAttribute="top" secondItem="hua-qX-8TT" secondAttribute="top" id="RR5-ZV-EPM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cmi-Ho-fce" secondAttribute="trailing" id="c1A-gX-1IW"/>
+                                    <constraint firstItem="cKI-L8-0aB" firstAttribute="width" secondItem="hua-qX-8TT" secondAttribute="width" multiplier="0.44686" id="dja-pM-KAP"/>
+                                    <constraint firstItem="Cmi-Ho-fce" firstAttribute="leading" secondItem="hua-qX-8TT" secondAttribute="leading" id="gQc-nM-7dr"/>
+                                    <constraint firstItem="RdJ-XI-z6x" firstAttribute="width" secondItem="hua-qX-8TT" secondAttribute="width" multiplier="0.44686" id="jYm-eK-Yee"/>
+                                    <constraint firstItem="MO8-3b-Dkb" firstAttribute="centerX" secondItem="hua-qX-8TT" secondAttribute="centerX" id="kMu-Ol-wO5"/>
+                                    <constraint firstItem="LKN-Ek-GWX" firstAttribute="width" secondItem="hua-qX-8TT" secondAttribute="width" multiplier="0.44686" id="kug-qS-xXm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HJJ-uL-G7D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HJJ-uL-G7D" firstAttribute="trailing" secondItem="hua-qX-8TT" secondAttribute="trailing" id="2Cd-Bv-ggB"/>
+                            <constraint firstItem="hua-qX-8TT" firstAttribute="top" secondItem="HJJ-uL-G7D" secondAttribute="top" id="kvO-TH-7Rf"/>
+                            <constraint firstItem="HJJ-uL-G7D" firstAttribute="bottom" secondItem="hua-qX-8TT" secondAttribute="bottom" id="vUv-oJ-gED"/>
+                            <constraint firstItem="hua-qX-8TT" firstAttribute="leading" secondItem="HJJ-uL-G7D" secondAttribute="leading" id="y19-uY-Yzf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="QR Code Scanner" id="VvC-GU-6dG">
+                        <barButtonItem key="leftBarButtonItem" image="Nav Left" id="fa0-HB-XNR"/>
+                        <barButtonItem key="rightBarButtonItem" image="Nav Right" id="MU1-vM-hiD"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cardTypeCollectionView" destination="Cmi-Ho-fce" id="GTV-F5-u65"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tid-MB-Ke4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2656.875" y="829.22535211267609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="C3B-8e-JHr">
+            <objects>
+                <viewController id="1j8-fV-Ndm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cvm-5f-PhC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MKi-by-urK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cbe-hH-1N0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3aa-zh-2HH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4612.5" y="1240.1408450704225"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nJz-D3-7lW">
+            <objects>
+                <viewController id="Ems-L4-cBt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0JG-hm-cdg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DYr-k3-E45"/>
+                        <color key="backgroundColor" systemColor="tableBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Project" id="izj-80-Sca"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXf-B2-76F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5499.375" y="1240.1408450704225"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tGB-D4-cL6">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0ca-rX-3WA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FMK-0M-qpB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="paw-Wg-4gV" kind="relationship" relationship="viewControllers" id="Ahw-VP-Hgc"/>
+                        <segue destination="7mI-sc-bkZ" kind="relationship" relationship="viewControllers" id="Rod-u8-5O9"/>
+                        <segue destination="Ems-L4-cBt" kind="relationship" relationship="viewControllers" id="acp-ed-P9A"/>
+                        <segue destination="iVd-Pp-TL6" kind="relationship" relationship="viewControllers" id="kca-k9-NOF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcS-7c-URN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="-69"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l42-OI-BBc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iVd-Pp-TL6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Create" selectedImage="Template" id="dnb-to-RFU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Amj-UI-ij6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iY0-kc-N0H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SBH-Ye-xqU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-538" y="829"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B5q-AO-IKc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="paw-Wg-4gV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Template" selectedImage="Create" id="2De-A2-g8a"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BE2-Xp-Kje">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kaI-Nm-qa9" kind="relationship" relationship="rootViewController" id="Wak-dA-Vk5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNE-fF-hjy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747.5" y="829.22535211267609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rv4-HG-kHS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7mI-sc-bkZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Scan" id="j0C-jg-E2O"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0nB-af-aIo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1j8-fV-Ndm" kind="relationship" relationship="rootViewController" id="ErV-TA-fae"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="osf-f7-YgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3615" y="1240.1408450704225"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Create" width="60" height="60"/>
+        <image name="Create Bar Codes" width="185" height="150"/>
+        <image name="Create qr Codes" width="185" height="150"/>
+        <image name="Decorate qr codes" width="185" height="150"/>
+        <image name="Nav Left" width="44" height="44"/>
+        <image name="Nav Right" width="60" height="44"/>
+        <image name="Project" width="60" height="60"/>
+        <image name="Scan" width="60.333332061767578" height="60"/>
+        <image name="Scan qr codes" width="185" height="150"/>
+        <image name="Template" width="60.333332061767578" height="60"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tableBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

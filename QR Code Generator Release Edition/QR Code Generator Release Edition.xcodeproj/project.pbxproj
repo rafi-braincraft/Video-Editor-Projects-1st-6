@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D1C9C192CE2356500DC4F78 /* GeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C9C182CE2356500DC4F78 /* GeneratorViewController.swift */; };
+		6D1C9C1B2CE235BF00DC4F78 /* GeneratorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C9C1A2CE235BF00DC4F78 /* GeneratorCollectionViewCell.swift */; };
+		6D1C9C1D2CE2360800DC4F78 /* GeneratorCollectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C9C1C2CE2360800DC4F78 /* GeneratorCollectionHeaderCell.swift */; };
+		6D1C9C202CE2364E00DC4F78 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C9C1F2CE2364E00DC4F78 /* Colors.swift */; };
+		6D5E0F7F2D1991E1009C648C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6D5E0F7E2D1991E1009C648C /* SDWebImage */; };
+		6D7E2F472CE229D5008DDEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7E2F462CE229D5008DDEDE /* AppDelegate.swift */; };
+		6D7E2F492CE229D5008DDEDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7E2F482CE229D5008DDEDE /* SceneDelegate.swift */; };
+		6D7E2F4B2CE229D5008DDEDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7E2F4A2CE229D5008DDEDE /* ViewController.swift */; };
+		6D7E2F4E2CE229D5008DDEDE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6D7E2F4D2CE229D5008DDEDE /* Base */; };
+		6D7E2F502CE229D7008DDEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7E2F4F2CE229D7008DDEDE /* Assets.xcassets */; };
+		6D7E2F532CE229D7008DDEDE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6D7E2F522CE229D7008DDEDE /* Base */; };
+		6DCD77DB2CE44F0F003C582C /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCD77DA2CE44F0F003C582C /* ProjectViewController.swift */; };
+		6DE229D42CE35DC20050139B /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE229D32CE35DC20050139B /* TemplateViewController.swift */; };
+		6DE229D62CE36EBD0050139B /* TemplateHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE229D52CE36EBD0050139B /* TemplateHeaderCollectionViewCell.swift */; };
+		6DE229D82CE381120050139B /* TemplateMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE229D72CE381120050139B /* TemplateMainCollectionViewCell.swift */; };
+		6DE229DA2CE381A30050139B /* PixabayAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE229D92CE381A30050139B /* PixabayAPIManager.swift */; };
+		6DE229DF2CE382580050139B /* PixabayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE229DE2CE382580050139B /* PixabayModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D1C9C182CE2356500DC4F78 /* GeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewController.swift; sourceTree = "<group>"; };
+		6D1C9C1A2CE235BF00DC4F78 /* GeneratorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorCollectionViewCell.swift; sourceTree = "<group>"; };
+		6D1C9C1C2CE2360800DC4F78 /* GeneratorCollectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorCollectionHeaderCell.swift; sourceTree = "<group>"; };
+		6D1C9C1F2CE2364E00DC4F78 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		6D7E2F432CE229D5008DDEDE /* QR Code Generator Release Edition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QR Code Generator Release Edition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7E2F462CE229D5008DDEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D7E2F482CE229D5008DDEDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6D7E2F4A2CE229D5008DDEDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D7E2F4D2CE229D5008DDEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D7E2F4F2CE229D7008DDEDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D7E2F522CE229D7008DDEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D7E2F542CE229D7008DDEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DCD77DA2CE44F0F003C582C /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		6DE229D32CE35DC20050139B /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
+		6DE229D52CE36EBD0050139B /* TemplateHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		6DE229D72CE381120050139B /* TemplateMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMainCollectionViewCell.swift; sourceTree = "<group>"; };
+		6DE229D92CE381A30050139B /* PixabayAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayAPIManager.swift; sourceTree = "<group>"; };
+		6DE229DE2CE382580050139B /* PixabayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D7E2F402CE229D5008DDEDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5E0F7F2D1991E1009C648C /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D1C9C172CE2352800DC4F78 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DCD77D92CE44EE0003C582C /* Project */,
+				6DCD77D82CE44EA9003C582C /* Template */,
+				6DCD77D72CE44E8C003C582C /* Generator */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		6D1C9C1E2CE2363800DC4F78 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6D1C9C1F2CE2364E00DC4F78 /* Colors.swift */,
+				6DE229D92CE381A30050139B /* PixabayAPIManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6D7E2F3A2CE229D5008DDEDE = {
+			isa = PBXGroup;
+			children = (
+				6D7E2F452CE229D5008DDEDE /* QR Code Generator Release Edition */,
+				6D7E2F442CE229D5008DDEDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D7E2F442CE229D5008DDEDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D7E2F432CE229D5008DDEDE /* QR Code Generator Release Edition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D7E2F452CE229D5008DDEDE /* QR Code Generator Release Edition */ = {
+			isa = PBXGroup;
+			children = (
+				6DE229DD2CE382450050139B /* Models */,
+				6D1C9C1E2CE2363800DC4F78 /* Utilities */,
+				6D1C9C172CE2352800DC4F78 /* TabBarControllers */,
+				6D7E2F462CE229D5008DDEDE /* AppDelegate.swift */,
+				6D7E2F482CE229D5008DDEDE /* SceneDelegate.swift */,
+				6D7E2F4A2CE229D5008DDEDE /* ViewController.swift */,
+				6D7E2F4C2CE229D5008DDEDE /* Main.storyboard */,
+				6D7E2F4F2CE229D7008DDEDE /* Assets.xcassets */,
+				6D7E2F512CE229D7008DDEDE /* LaunchScreen.storyboard */,
+				6D7E2F542CE229D7008DDEDE /* Info.plist */,
+			);
+			path = "QR Code Generator Release Edition";
+			sourceTree = "<group>";
+		};
+		6DCD77D72CE44E8C003C582C /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				6D1C9C1C2CE2360800DC4F78 /* GeneratorCollectionHeaderCell.swift */,
+				6D1C9C1A2CE235BF00DC4F78 /* GeneratorCollectionViewCell.swift */,
+				6D1C9C182CE2356500DC4F78 /* GeneratorViewController.swift */,
+			);
+			path = Generator;
+			sourceTree = "<group>";
+		};
+		6DCD77D82CE44EA9003C582C /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				6DE229D32CE35DC20050139B /* TemplateViewController.swift */,
+				6DE229D52CE36EBD0050139B /* TemplateHeaderCollectionViewCell.swift */,
+				6DE229D72CE381120050139B /* TemplateMainCollectionViewCell.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		6DCD77D92CE44EE0003C582C /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				6DCD77DA2CE44F0F003C582C /* ProjectViewController.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		6DE229DD2CE382450050139B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DE229DE2CE382580050139B /* PixabayModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D7E2F422CE229D5008DDEDE /* QR Code Generator Release Edition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7E2F572CE229D7008DDEDE /* Build configuration list for PBXNativeTarget "QR Code Generator Release Edition" */;
+			buildPhases = (
+				6D7E2F3F2CE229D5008DDEDE /* Sources */,
+				6D7E2F402CE229D5008DDEDE /* Frameworks */,
+				6D7E2F412CE229D5008DDEDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QR Code Generator Release Edition";
+			productName = "QR Code Generator Release Edition";
+			productReference = 6D7E2F432CE229D5008DDEDE /* QR Code Generator Release Edition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D7E2F3B2CE229D5008DDEDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					6D7E2F422CE229D5008DDEDE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 6D7E2F3E2CE229D5008DDEDE /* Build configuration list for PBXProject "QR Code Generator Release Edition" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D7E2F3A2CE229D5008DDEDE;
+			packageReferences = (
+				6D5E0F7D2D1991E1009C648C /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 6D7E2F442CE229D5008DDEDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D7E2F422CE229D5008DDEDE /* QR Code Generator Release Edition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D7E2F412CE229D5008DDEDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7E2F502CE229D7008DDEDE /* Assets.xcassets in Resources */,
+				6D7E2F532CE229D7008DDEDE /* Base in Resources */,
+				6D7E2F4E2CE229D5008DDEDE /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D7E2F3F2CE229D5008DDEDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE229D62CE36EBD0050139B /* TemplateHeaderCollectionViewCell.swift in Sources */,
+				6D1C9C1B2CE235BF00DC4F78 /* GeneratorCollectionViewCell.swift in Sources */,
+				6D7E2F4B2CE229D5008DDEDE /* ViewController.swift in Sources */,
+				6DCD77DB2CE44F0F003C582C /* ProjectViewController.swift in Sources */,
+				6DE229D42CE35DC20050139B /* TemplateViewController.swift in Sources */,
+				6DE229DF2CE382580050139B /* PixabayModel.swift in Sources */,
+				6D7E2F472CE229D5008DDEDE /* AppDelegate.swift in Sources */,
+				6DE229D82CE381120050139B /* TemplateMainCollectionViewCell.swift in Sources */,
+				6D1C9C202CE2364E00DC4F78 /* Colors.swift in Sources */,
+				6D1C9C192CE2356500DC4F78 /* GeneratorViewController.swift in Sources */,
+				6D1C9C1D2CE2360800DC4F78 /* GeneratorCollectionHeaderCell.swift in Sources */,
+				6D7E2F492CE229D5008DDEDE /* SceneDelegate.swift in Sources */,
+				6DE229DA2CE381A30050139B /* PixabayAPIManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D7E2F4C2CE229D5008DDEDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D7E2F4D2CE229D5008DDEDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D7E2F512CE229D7008DDEDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D7E2F522CE229D7008DDEDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D7E2F552CE229D7008DDEDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D7E2F562CE229D7008DDEDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D7E2F582CE229D7008DDEDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z5QKKN4N6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "QR Code Generator Release Edition/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brainCraft.QR-Code-Generator-Release-Edition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D7E2F592CE229D7008DDEDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z5QKKN4N6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "QR Code Generator Release Edition/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brainCraft.QR-Code-Generator-Release-Edition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D7E2F3E2CE229D5008DDEDE /* Build configuration list for PBXProject "QR Code Generator Release Edition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7E2F552CE229D7008DDEDE /* Debug */,
+				6D7E2F562CE229D7008DDEDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D7E2F572CE229D7008DDEDE /* Build configuration list for PBXNativeTarget "QR Code Generator Release Edition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7E2F582CE229D7008DDEDE /* Debug */,
+				6D7E2F592CE229D7008DDEDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D5E0F7D2D1991E1009C648C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D5E0F7E2D1991E1009C648C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D5E0F7D2D1991E1009C648C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6D7E2F3B2CE229D5008DDEDE /* Project object */;
+}
