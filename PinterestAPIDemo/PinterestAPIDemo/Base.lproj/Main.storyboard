@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PinterestAPIDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGt-q5-3iZ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9a-9l-VEt">
+                                        <rect key="frame" x="107" y="359" width="179" height="41"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Log in with Pinterest"/>
+                                        <connections>
+                                            <action selector="logInWithPinterestTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XTg-1e-UHB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="R9a-9l-VEt" firstAttribute="centerX" secondItem="mGt-q5-3iZ" secondAttribute="centerX" id="gqJ-SB-0y9"/>
+                                    <constraint firstItem="R9a-9l-VEt" firstAttribute="centerY" secondItem="mGt-q5-3iZ" secondAttribute="centerY" id="rfN-8r-v9C"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mGt-q5-3iZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="K63-fd-ft3"/>
+                            <constraint firstItem="mGt-q5-3iZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kmh-q0-jgy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mGt-q5-3iZ" secondAttribute="trailing" id="QLZ-VO-kqp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mGt-q5-3iZ" secondAttribute="bottom" id="Wvd-gq-vNe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15" y="4"/>
+        </scene>
+        <!--Pins View Controller-->
+        <scene sceneID="eHW-2w-jkz">
+            <objects>
+                <viewController storyboardIdentifier="PinsViewController" id="bfP-nt-hM2" customClass="PinsViewController" customModule="PinterestAPIDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Tj-ZB-h5r">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcg-93-k8b">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qgL-Zw-m08">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qUG-sO-Sae">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IEq-oe-rS1">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kER-es-P6c">
+                                                    <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="qgL-Zw-m08" firstAttribute="top" secondItem="Tcg-93-k8b" secondAttribute="top" id="5tO-u6-xp7"/>
+                                    <constraint firstAttribute="trailing" secondItem="qgL-Zw-m08" secondAttribute="trailing" id="TUs-cq-9tR"/>
+                                    <constraint firstAttribute="bottom" secondItem="qgL-Zw-m08" secondAttribute="bottom" id="fUf-iu-cVC"/>
+                                    <constraint firstItem="qgL-Zw-m08" firstAttribute="leading" secondItem="Tcg-93-k8b" secondAttribute="leading" id="znK-IZ-y1r"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lg9-GI-1cd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tcg-93-k8b" firstAttribute="top" secondItem="Lg9-GI-1cd" secondAttribute="top" id="1mz-CZ-Vch"/>
+                            <constraint firstItem="Lg9-GI-1cd" firstAttribute="bottom" secondItem="Tcg-93-k8b" secondAttribute="bottom" id="BsD-7e-W8j"/>
+                            <constraint firstItem="Lg9-GI-1cd" firstAttribute="trailing" secondItem="Tcg-93-k8b" secondAttribute="trailing" id="mD8-R4-pns"/>
+                            <constraint firstItem="Tcg-93-k8b" firstAttribute="leading" secondItem="Lg9-GI-1cd" secondAttribute="leading" id="xlR-Kd-62r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pinsCollectionView" destination="qgL-Zw-m08" id="tzY-xm-dzG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOB-bm-0ih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="787" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

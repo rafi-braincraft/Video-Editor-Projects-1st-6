@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'PinterestAPIDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PinterestAPIDemo
+  pod "PinterestSDK", :git => "git@github.com:pinterest/ios-pdk.git"
+
+  target 'PinterestAPIDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PinterestAPIDemoUITests' do
+    # Pods for testing
+  end
+
+end

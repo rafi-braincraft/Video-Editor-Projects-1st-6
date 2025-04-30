@@ -1,0 +1,15 @@
+{
+  "originHash" : "d76306a4fd554ce57e3c84eb80a39998f42f801b6cd8469ab0a1d2a414ac1201",
+  "pins" : [
+    {
+      "identity" : "metalpetal",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MetalPetal/MetalPetal.git",
+      "state" : {
+        "revision" : "f9b78897bd4214bb097f352a1bde0a4f4a1e2ddb",
+        "version" : "1.25.2"
+      }
+    }
+  ],
+  "version" : 3
+}
