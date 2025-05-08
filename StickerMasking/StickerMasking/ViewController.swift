@@ -1,13 +1,7 @@
-//
-//  ViewController.swift
-//  StickerMasking
-//
-//  Created by BCL Device 5 on 9/4/25.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var videoHolderView: UIView!
     
     //eraser button view
     @IBOutlet weak var eraserButtonIcon: UIImageView!
@@ -20,15 +14,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var restoreButtonView: UIView!
     
     @IBOutlet weak var eraserThicknessSlider: UISlider!
-    @IBOutlet weak var maskableView: MetalMaskingView!
-    
+    @IBOutlet weak var maskableView: DrawableView!
     
     var imageView = UIImageView()
+    var sampleImageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupUI()
+        setupVideoHolderAndSampleImage()
         setupImageView()
         setupMaskableView()
     }
@@ -42,50 +37,54 @@ class ViewController: UIViewController {
         restoreButtonView.layer.borderWidth = 1
         restoreButtonView.layer.borderColor = UIColor.black.cgColor
         
-        // Set initial slider value to match the default eraser width
-       // eraserThicknessSlider.value = Float(maskableView.eraserWidth)
-        
         // Set initial button states
         updateEraserButtonView(for: true)
         updateRestoreButtonView(for: false)
     }
     
     private func setupMaskableView() {
-//        maskableView.currentMode = .ERASE
-//        maskableView.bkgImage = UIImage(named: "sample") ?? UIImage()
-//        maskableView.eraserColor = .white
-//        
+        maskableView.frame = videoHolderView.bounds
+        maskableView.isUserInteractionEnabled = true
+        
         let pan = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
+        pan.maximumNumberOfTouches = 1
+        pan.minimumNumberOfTouches = 1
         maskableView.addGestureRecognizer(pan)
+    }
+    
+    private func setupVideoHolderAndSampleImage() {
+        // Add a sample image view to videoHolderView
+        sampleImageView = UIImageView(frame: videoHolderView.bounds)
+        sampleImageView.contentMode = .scaleAspectFit
+        sampleImageView.image = UIImage(named: "sample") // Your background image
+        sampleImageView.isUserInteractionEnabled = true
+        videoHolderView.addSubview(sampleImageView)
     }
     
     private func setupImageView() {
         imageView.contentMode = .scaleAspectFit
         imageView.frame = maskableView.bounds
-        imageView.image = UIImage(named: "sample") // Replace "sample" with your image name
+        imageView.image = UIImage(named: "transperant") // Replace "sample" with your image name
         
         // Instead of adding the imageView as a subview, update the background of DrawingCanvasView
         maskableView.updateBackgroundImage(imageView.image ?? UIImage())
     }
     
     @IBAction func eraserButtonTapped(_ sender: UIButton) {
-        
         maskableView.currentMode = .erase
-               updateEraserButtonView(for: true)
-               updateRestoreButtonView(for: false)
+        updateEraserButtonView(for: true)
+        updateRestoreButtonView(for: false)
     }
     
     @IBAction func restoreButtonTapped(_ sender: UIButton) {
-//        maskableView.resetMask()
-//                
-//                // Or if we want manual restore functionality:
         maskableView.currentMode = .restore
-               updateEraserButtonView(for: false)
-                updateRestoreButtonView(for: true)
+        updateEraserButtonView(for: false)
+        updateRestoreButtonView(for: true)
     }
     
     @IBAction func handleThicknessSlider(_ sender: UISlider) {
-       // maskableView.eraserWidth = CGFloat(sender.value)
+        // Uncomment if you want to implement this
+        // maskableView.eraserWidth = CGFloat(sender.value)
     }
     
     @objc func handlePan(_ gesture: UIPanGestureRecognizer) {

@@ -20,10 +20,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unA-Sk-pC0" userLabel="holderView">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="transperant" translatesAutoresizingMaskIntoConstraints="NO" id="GSe-eB-rKE">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97f-Xn-d1B" userLabel="video holder View">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="651"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mr-q8-3T2" userLabel="Canvas View" customClass="MetalMaskingView" customModule="StickerMasking" customModuleProvider="target">
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transperant" translatesAutoresizingMaskIntoConstraints="NO" id="l5O-Ib-cHQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="651"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="l5O-Ib-cHQ" firstAttribute="top" secondItem="97f-Xn-d1B" secondAttribute="top" id="CkY-Nc-0ql"/>
+                                            <constraint firstItem="l5O-Ib-cHQ" firstAttribute="leading" secondItem="97f-Xn-d1B" secondAttribute="leading" id="FNX-G1-boo"/>
+                                            <constraint firstAttribute="bottom" secondItem="l5O-Ib-cHQ" secondAttribute="bottom" id="IWp-Au-FL9"/>
+                                            <constraint firstAttribute="trailing" secondItem="l5O-Ib-cHQ" secondAttribute="trailing" id="Vlm-Fw-ySm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mr-q8-3T2" userLabel="Canvas View" customClass="DrawableView" customModule="StickerMasking" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="651"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -172,18 +184,18 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="a5f-Zr-Tgc" firstAttribute="bottom" secondItem="qpC-Lx-GD0" secondAttribute="top" constant="8" id="1YK-Ho-MaJ"/>
-                                    <constraint firstItem="GSe-eB-rKE" firstAttribute="top" secondItem="unA-Sk-pC0" secondAttribute="top" id="5ce-2q-Ouf"/>
                                     <constraint firstAttribute="trailing" secondItem="a5f-Zr-Tgc" secondAttribute="trailing" id="8l9-dU-Xxb"/>
                                     <constraint firstItem="a5f-Zr-Tgc" firstAttribute="top" secondItem="7mr-q8-3T2" secondAttribute="bottom" constant="8" id="BkL-Ec-ovX"/>
+                                    <constraint firstItem="97f-Xn-d1B" firstAttribute="leading" secondItem="7mr-q8-3T2" secondAttribute="leading" id="EbP-7t-79K"/>
+                                    <constraint firstItem="97f-Xn-d1B" firstAttribute="top" secondItem="7mr-q8-3T2" secondAttribute="top" id="HJI-qA-MX2"/>
                                     <constraint firstAttribute="trailing" secondItem="7mr-q8-3T2" secondAttribute="trailing" id="Put-Yn-syL"/>
                                     <constraint firstItem="a5f-Zr-Tgc" firstAttribute="leading" secondItem="unA-Sk-pC0" secondAttribute="leading" id="R86-6M-Ydk"/>
-                                    <constraint firstItem="GSe-eB-rKE" firstAttribute="leading" secondItem="unA-Sk-pC0" secondAttribute="leading" id="RTR-3G-Z7N"/>
+                                    <constraint firstItem="97f-Xn-d1B" firstAttribute="bottom" secondItem="7mr-q8-3T2" secondAttribute="bottom" id="RCc-L1-Jig"/>
                                     <constraint firstItem="7mr-q8-3T2" firstAttribute="leading" secondItem="unA-Sk-pC0" secondAttribute="leading" id="WNC-hc-2xd"/>
                                     <constraint firstAttribute="bottom" secondItem="qpC-Lx-GD0" secondAttribute="bottom" constant="8" id="aNC-pS-O0Z"/>
                                     <constraint firstItem="7mr-q8-3T2" firstAttribute="top" secondItem="unA-Sk-pC0" secondAttribute="top" id="eB2-TS-EVL"/>
                                     <constraint firstItem="qpC-Lx-GD0" firstAttribute="centerX" secondItem="unA-Sk-pC0" secondAttribute="centerX" id="gfX-NN-mnr"/>
-                                    <constraint firstAttribute="trailing" secondItem="GSe-eB-rKE" secondAttribute="trailing" id="lZo-Wf-As4"/>
-                                    <constraint firstItem="GSe-eB-rKE" firstAttribute="bottom" secondItem="7mr-q8-3T2" secondAttribute="bottom" id="qMk-6w-BIr"/>
+                                    <constraint firstItem="97f-Xn-d1B" firstAttribute="trailing" secondItem="7mr-q8-3T2" secondAttribute="trailing" id="qdN-Cd-jZf"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -205,6 +217,7 @@
                         <outlet property="restoreButtonIcon" destination="IQB-4C-4c0" id="rV7-Bw-Fuy"/>
                         <outlet property="restoreButtonLabel" destination="KmQ-oY-j7b" id="1SB-F7-Czl"/>
                         <outlet property="restoreButtonView" destination="CIT-KU-CyS" id="Vyy-9c-NhO"/>
+                        <outlet property="videoHolderView" destination="97f-Xn-d1B" id="Zog-Fs-pWk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  PinterestAPIDemo
+//  pinterestAPIReleaseAdition
 //
-//  Created by BCL Device 5 on 30/4/25.
+//  Created by BCL Device 5 on 8/5/25.
 //
 
 import UIKit
@@ -14,8 +14,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func logInWithPinterestTapped(_ sender: UIButton) {
-    }
-    
+
 }
 
